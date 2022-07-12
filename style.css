@@ -1,0 +1,67 @@
+h3 {
+  font-size: 70px;
+  color: blueviolet;
+
+}
+body
+{
+    padding: 50px;
+}
+
+button {
+    color:brown;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#heading4 {
+
+    color: dodgerblue;
+
+}
+.heading5 {
+
+    color:tomato;
+}
+
+.row {
+    background-color: blue;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: table;
+
+}
+
+.column {
+    background-color: crimson;
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width:900px) {
+    .column {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    
+    position: fixed;
+}

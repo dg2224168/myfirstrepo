@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My title
+        </title>
+    </head>
+    <body>
+
+
+    <button onclick="changeColor()">
+        Show Date Below!
+    </button>
+    <div id="btnArea" style="width: 200px;height: 200px; background-color: yellow;">
+           This is div area!
+    </div>
+
+
+    This is the body!
+    <button onclick="changeLight()">
+     Turn the light on!
+    </button>
+    <!-- <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif"> -->
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif">
+
+    <script>
+
+        function changeColor(){
+            randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+            var div = document.getElementById("btnArea")
+            div.style.color = "#"+randomColor;
+            div.style.backgroundColor = "#"+randomColor;
+        }
+        function changeLight(){
+            var image = document.getElementById("bulb");
+            image.src ="https://www.w3schools.com/js/pic_bulbon.gif";
+
+
+            // alert("This is working!")
+        }
+    </script>
+    </body>
+</html>
